@@ -1,0 +1,30 @@
+{
+  "id": "token-flashlight",
+  "title": "Token Flashlight",
+  "description": "A small module for applying preconfigured lighting effects to tokens on the game canvas.",
+  "version": "1.0.0",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "Conjectural Technologies"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12.331",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/token-flashlight.js"
+  ],
+  "styles": [
+    "styles/token-flashlight.css"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+}
