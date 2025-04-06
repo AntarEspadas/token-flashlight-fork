@@ -1,0 +1,71 @@
+<form>
+  <h2>{{ title }}</h2>
+  <div class="form-group">
+    <label>Dim Light Radius</label>
+    <div class="form-fields">
+      <input type="number" name="dim" value="{{ lightSource.dim }}" step="1" min="0">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Bright Light Radius</label>
+    <div class="form-fields">
+      <input type="number" name="bright" value="{{ lightSource.bright }}" step="1" min="0">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Light Color</label>
+    <div class="form-fields">
+      <input type="text" name="colorHex" value="{{ lightSource.color }}" placeholder="#RRGGBB" pattern="^#[0-9A-Fa-f]{6}$" style="width: 80px; margin-right: 5px;">
+      <input type="color" name="color" value="{{ lightSource.color }}">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Light Angle</label>
+    <div class="form-fields">
+      <input type="number" name="angle" value="{{ lightSource.angle }}" step="1" min="0" max="360">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Animation Type</label>
+    <div class="form-fields">
+      <select name="animationType">
+        {{#select lightSource.animation.type}}
+        {{#each animationTypes as |label key|}}
+        <option value="{{key}}">{{label}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Animation Speed</label>
+    <div class="form-fields">
+      <input type="range" name="animationSpeed" value="{{ lightSource.animation.speed }}" min="1" max="10" step="1">
+      <span class="range-value">{{ lightSource.animation.speed }}</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Animation Intensity</label>
+    <div class="form-fields">
+      <input type="range" name="animationIntensity" value="{{ lightSource.animation.intensity }}" min="1" max="10" step="1">
+      <span class="range-value">{{ lightSource.animation.intensity }}</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Resource Item</label>
+    <div class="form-fields">
+      <input type="text" name="resourceItem" value="{{ lightSource.resource.item }}">
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Resource Cost</label>
+    <div class="form-fields">
+      <input type="number" name="resourceCost" value="{{ lightSource.resource.cost }}" min="0" step="1">
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="button" name="reset">Reset</button>
+    <button type="button" name="apply">Apply</button>
+    <button type="button" name="cancel">Cancel</button>
+  </div>
+</form>

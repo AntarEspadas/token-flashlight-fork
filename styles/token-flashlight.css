@@ -1,0 +1,53 @@
+#light-source-config .form-group {
+  margin-bottom: 10px;
+}
+
+#light-source-config .form-fields {
+  display: flex;
+  align-items: center;
+}
+
+#light-source-config .range-value {
+  margin-left: 5px;
+  min-width: 20px;
+  text-align: center;
+}
+
+#light-source-config button {
+  margin-right: 5px;
+}
+
+.flashlight-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.flashlight-button {
+  height: 50px;
+  text-align: center;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  line-height: 1.2;
+}
+
+.flashlight-button:hover {
+  background-color: #e0e0e0;
+}
+
+.flashlight-button.cancel-button {
+  background-color: #f00;
+}
+
+.flashlight-button.cancel-button:hover {
+  background-color: #f00;
+}
