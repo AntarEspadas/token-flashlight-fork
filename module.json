@@ -1,24 +1,21 @@
 {
-  "id": "token-flashlight",
-  "title": "Token Flashlight",
-  "description": "A small module for applying preconfigured lighting effects to tokens on the game canvas.",
-  "version": "1.0.0",
-  "readme": "README.md",
-  "authors": [
-    {
-      "name": "Conjectural Technologies"
-    }
-  ],
-  "compatibility": {
-    "minimum": "12.331",
-    "verified": "13"
-  },
-  "esmodules": [
-    "scripts/token-flashlight.js"
-  ],
-  "styles": [
-    "styles/token-flashlight.css"
-  ],
+	"id": "token-flashlight",
+	"name": "token-flashlight",
+	"title": "Token Flashlight",
+	"description": "A small module for applying preconfigured lighting effects to tokens on the game canvas.",
+	"version": "1.0.0",
+	"authors": [{
+		"name": "Conjectural Technologies",
+		"url": "https://github.com/Conjectural-Technologies"
+	}],
+	"esmodules": ["scripts/token-flashlight.js"],
+	"styles": ["styles/token-flashlight.css"],
+	"minimumCoreVersion": "12.331",
+	"compatibleCoreVersion": "13",
+	"compatibility": {
+		"minimum": "12.331",
+		"verified": "13"
+	},
   "relationships": {
     "systems": [
       {
@@ -26,5 +23,8 @@
         "type": "system"
       }
     ]
-  }
+  },
+	"url": "https://github.com/Conjectural-Technologies/token-flashlight",
+	"manifest": "https://raw.githubusercontent.com/Conjectural-Technologies/token-flashlight/main/module.json",
+	"download": "https://github.com/Conjectural-Technologies/token-flashlight/releases/token-flashlight-v1.0.0.zip"
 }
