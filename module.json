@@ -26,5 +26,5 @@
   },
 	"url": "https://github.com/Conjectural-Technologies/token-flashlight",
 	"manifest": "https://raw.githubusercontent.com/Conjectural-Technologies/token-flashlight/main/module.json",
-	"download": "https://github.com/Conjectural-Technologies/token-flashlight/releases/token-flashlight-v1.0.0.zip"
+	"download": "https://github.com/Conjectural-Technologies/token-flashlight/archive/refs/tags/v1.0.0.zip"
 }
