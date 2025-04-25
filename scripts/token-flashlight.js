@@ -356,7 +356,7 @@ export function applyLightSource(tokens, lightSourceId, consumeResource = false)
           bright: source.bright,
           color: source.color,
           angle: source.angle,
-          alpha: 0.5,
+          alpha: 0.3,
           animation: {
             type: source.animation.type,
             speed: source.animation.speed,
